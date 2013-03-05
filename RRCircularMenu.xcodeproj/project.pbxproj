@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC66D74D16E6732400FF9097 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC66D74C16E6732400FF9097 /* UIKit.framework */; };
+		AC66D74F16E6732400FF9097 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC66D74E16E6732400FF9097 /* Foundation.framework */; };
+		AC66D75116E6732400FF9097 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC66D75016E6732400FF9097 /* CoreGraphics.framework */; };
+		AC66D75716E6732400FF9097 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AC66D75516E6732400FF9097 /* InfoPlist.strings */; };
+		AC66D75916E6732400FF9097 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC66D75816E6732400FF9097 /* main.m */; };
+		AC66D75D16E6732400FF9097 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC66D75C16E6732400FF9097 /* AppDelegate.m */; };
+		AC66D75F16E6732500FF9097 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = AC66D75E16E6732400FF9097 /* Default.png */; };
+		AC66D76116E6732500FF9097 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC66D76016E6732500FF9097 /* Default@2x.png */; };
+		AC66D76316E6732500FF9097 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AC66D76216E6732500FF9097 /* Default-568h@2x.png */; };
+		AC66D76616E6732500FF9097 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC66D76516E6732500FF9097 /* ViewController.m */; };
+		AC66D76916E6732500FF9097 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC66D76716E6732500FF9097 /* ViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AC66D74916E6732400FF9097 /* RRCircularMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RRCircularMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC66D74C16E6732400FF9097 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AC66D74E16E6732400FF9097 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AC66D75016E6732400FF9097 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AC66D75416E6732400FF9097 /* RRCircularMenu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RRCircularMenu-Info.plist"; sourceTree = "<group>"; };
+		AC66D75616E6732400FF9097 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AC66D75816E6732400FF9097 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC66D75A16E6732400FF9097 /* RRCircularMenu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RRCircularMenu-Prefix.pch"; sourceTree = "<group>"; };
+		AC66D75B16E6732400FF9097 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC66D75C16E6732400FF9097 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC66D75E16E6732400FF9097 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		AC66D76016E6732500FF9097 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		AC66D76216E6732500FF9097 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		AC66D76416E6732500FF9097 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC66D76516E6732500FF9097 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC66D76816E6732500FF9097 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC66D74616E6732400FF9097 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC66D74D16E6732400FF9097 /* UIKit.framework in Frameworks */,
+				AC66D74F16E6732400FF9097 /* Foundation.framework in Frameworks */,
+				AC66D75116E6732400FF9097 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC66D74016E6732400FF9097 = {
+			isa = PBXGroup;
+			children = (
+				AC66D75216E6732400FF9097 /* RRCircularMenu */,
+				AC66D74B16E6732400FF9097 /* Frameworks */,
+				AC66D74A16E6732400FF9097 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AC66D74A16E6732400FF9097 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC66D74916E6732400FF9097 /* RRCircularMenu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC66D74B16E6732400FF9097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC66D74C16E6732400FF9097 /* UIKit.framework */,
+				AC66D74E16E6732400FF9097 /* Foundation.framework */,
+				AC66D75016E6732400FF9097 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC66D75216E6732400FF9097 /* RRCircularMenu */ = {
+			isa = PBXGroup;
+			children = (
+				AC66D75B16E6732400FF9097 /* AppDelegate.h */,
+				AC66D75C16E6732400FF9097 /* AppDelegate.m */,
+				AC66D76416E6732500FF9097 /* ViewController.h */,
+				AC66D76516E6732500FF9097 /* ViewController.m */,
+				AC66D76716E6732500FF9097 /* ViewController.xib */,
+				AC66D75316E6732400FF9097 /* Supporting Files */,
+			);
+			path = RRCircularMenu;
+			sourceTree = "<group>";
+		};
+		AC66D75316E6732400FF9097 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC66D75416E6732400FF9097 /* RRCircularMenu-Info.plist */,
+				AC66D75516E6732400FF9097 /* InfoPlist.strings */,
+				AC66D75816E6732400FF9097 /* main.m */,
+				AC66D75A16E6732400FF9097 /* RRCircularMenu-Prefix.pch */,
+				AC66D75E16E6732400FF9097 /* Default.png */,
+				AC66D76016E6732500FF9097 /* Default@2x.png */,
+				AC66D76216E6732500FF9097 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC66D74816E6732400FF9097 /* RRCircularMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC66D76C16E6732500FF9097 /* Build configuration list for PBXNativeTarget "RRCircularMenu" */;
+			buildPhases = (
+				AC66D74516E6732400FF9097 /* Sources */,
+				AC66D74616E6732400FF9097 /* Frameworks */,
+				AC66D74716E6732400FF9097 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RRCircularMenu;
+			productName = RRCircularMenu;
+			productReference = AC66D74916E6732400FF9097 /* RRCircularMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC66D74116E6732400FF9097 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Artem Salpagarov";
+			};
+			buildConfigurationList = AC66D74416E6732400FF9097 /* Build configuration list for PBXProject "RRCircularMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AC66D74016E6732400FF9097;
+			productRefGroup = AC66D74A16E6732400FF9097 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC66D74816E6732400FF9097 /* RRCircularMenu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC66D74716E6732400FF9097 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC66D75716E6732400FF9097 /* InfoPlist.strings in Resources */,
+				AC66D75F16E6732500FF9097 /* Default.png in Resources */,
+				AC66D76116E6732500FF9097 /* Default@2x.png in Resources */,
+				AC66D76316E6732500FF9097 /* Default-568h@2x.png in Resources */,
+				AC66D76916E6732500FF9097 /* ViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC66D74516E6732400FF9097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC66D75916E6732400FF9097 /* main.m in Sources */,
+				AC66D75D16E6732400FF9097 /* AppDelegate.m in Sources */,
+				AC66D76616E6732500FF9097 /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC66D75516E6732400FF9097 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC66D75616E6732400FF9097 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AC66D76716E6732500FF9097 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC66D76816E6732500FF9097 /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC66D76A16E6732500FF9097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC66D76B16E6732500FF9097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC66D76D16E6732500FF9097 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RRCircularMenu/RRCircularMenu-Prefix.pch";
+				INFOPLIST_FILE = "RRCircularMenu/RRCircularMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AC66D76E16E6732500FF9097 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RRCircularMenu/RRCircularMenu-Prefix.pch";
+				INFOPLIST_FILE = "RRCircularMenu/RRCircularMenu-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC66D74416E6732400FF9097 /* Build configuration list for PBXProject "RRCircularMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC66D76A16E6732500FF9097 /* Debug */,
+				AC66D76B16E6732500FF9097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC66D76C16E6732500FF9097 /* Build configuration list for PBXNativeTarget "RRCircularMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC66D76D16E6732500FF9097 /* Debug */,
+				AC66D76E16E6732500FF9097 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC66D74116E6732400FF9097 /* Project object */;
+}
