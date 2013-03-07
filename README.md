@@ -20,6 +20,23 @@ See demo app for example. It's pretty simple:
 ```
 `showWithAnimationBlock` is a set of animations. Supplied animation block helps if you show menu in a modal way, so you can prepare view hierarchy for displaying menu.
 
+Delegate used for all kinds of events:
+```
+- (void) setItem:(int)index active:(BOOL)active;
+- (BOOL) isItemActive:(int)index;
+
+- (void) setLabelActive:(BOOL)active;
+- (BOOL) isLabelActive;
+- (void) setLabelText:(NSString *)text;
+
+- (void) setSliderValue:(int)value;
+- (void) setSliderValue:(int)value animated:(BOOL)animated;
+- (int) sliderValue;
+
+- (void) showWithAnimationBlock:(void(^)(void))block settingSliderTo:(int)value;
+- (void) hideWithAnimationBlock:(void(^)(void))block;
+```
+
 ## Credits
 
 Special thanks to [paiv](https://github.com/paiv) for [AngleGradientLayer](https://github.com/paiv/AngleGradientLayer).
