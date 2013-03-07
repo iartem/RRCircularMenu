@@ -11,7 +11,7 @@
 @class RRCircularItem, RRCircularMenuLabel, RRCircularSlider;
 
 @protocol RRCircularMenuDelegate <NSObject>
-
+@optional
 - (void) menuItem:(RRCircularItem *)item didChangeActive:(BOOL)active;
 - (void) menuLabel:(RRCircularMenuLabel *)label didChangeActive:(BOOL)active;
 
