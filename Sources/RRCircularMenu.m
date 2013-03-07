@@ -57,8 +57,9 @@
     items = _release(items);
     items = [[NSMutableArray alloc] init];
     float currentAngle = angleFromDegrees;
+    int index = 0;
     for (NSString *title in @[@"Time", @"Distance", @"Speed", @"HR", @"Calories", @"Route"]) {
-        [self addItem:title from:currentAngle to:currentAngle + angleStep];
+        [self addItem:title from:currentAngle to:currentAngle + angleStep index:index++];
         currentAngle += angleStep;
     }
     [[items objectAtIndex:0] setFirstOne:YES];
@@ -82,8 +83,9 @@
     [self addSubview:slider];
 }
 
-- (void) addItem:(NSString *)title from:(float)angleFrom to:(float)angleTo {
+- (void) addItem:(NSString *)title from:(float)angleFrom to:(float)angleTo index:(int)index{
     RRCircularItem *item = [[RRCircularItem alloc] initWithFrame:CGRectMake(10, 0, self.frame.size.width - 20, self.frame.size.height)];
+    item.tag = index;
     item.text = title;
     item.radius = radius;
     item.textRadius = textRadius;
