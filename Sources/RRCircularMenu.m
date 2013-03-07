@@ -74,7 +74,7 @@
     [self addSubview:label];
     
     // Add slider
-    slider = [[RRCircularSlider alloc] initWithFrame:CGRectMake(10, 10, self.bounds.size.width - 20, self.bounds.size.width - 20)];
+    slider = [[RRCircularSlider alloc] initWithFrame:CGRectMake(0, 10, self.bounds.size.width, self.bounds.size.width)];
     slider.angleFrom = angleFromDegrees;
     slider.angleTo = angleToDegrees;
     slider.step = angleStep;

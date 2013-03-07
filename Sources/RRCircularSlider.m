@@ -15,6 +15,11 @@
     UIButton *thumb;
     
     BOOL inThumb;
+    
+    float radius;
+    float offset;
+    CGPoint center;
+    CGSize circleSize;
 }
 
 @synthesize angleFrom = _angleFrom, angleTo = _angleTo, step = _step, value = _value;
@@ -27,6 +32,10 @@
 - (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        offset = 12;
+        radius = frame.size.width / 2 - offset;
+        center = CGPointMake(offset + radius, offset + radius);
+        
         self.backgroundColor = [UIColor clearColor];
         
         NSMutableArray *colors = [[NSMutableArray alloc] init];
@@ -94,7 +103,7 @@
 	CGPoint point = [pan locationInView:self];
 	switch (pan.state) {
 		case UIGestureRecognizerStateChanged: {
-            CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2 - 10);
+//            CGPoint center = CGPointMake(self.bounds.size.width / 2, self.bounds.size.height / 2 - 10);
             float x = point.x - self.bounds.origin.x - center.x;
             float y = -point.y + self.bounds.origin.y + center.y;
             float hypot = hypotf(x, y);
@@ -159,21 +168,21 @@
     int change = value - _value;
     _value = value;
     
-    float x = self.bounds.origin.x + (1 + cosf(_angleFrom + (value + 0.5) * _step)) * self.bounds.size.width / 2;
-    float y = self.bounds.origin.y + (1 + sinf(_angleFrom + (value + 0.5) * _step)) * self.bounds.size.width / 2;
+    float x = offset + (1 + cosf(_angleFrom + (value + 0.5) * _step)) * radius;
+    float y = offset + (1 + sinf(_angleFrom + (value + 0.5) * _step)) * radius - 10;
     
     if (animated) {
-        float currentAngle = [self angleBetweenThreePoints:CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2)
+        float currentAngle = [self angleBetweenThreePoints:CGPointMake(center.x, center.y - 10)
                                                         p1:CGPointMake(thumb.frame.origin.x + 20, thumb.frame.origin.y + 20)
-                                                        p2:CGPointMake(self.frame.size.width, self.frame.size.height / 2)];
-        float newAngle = [self angleBetweenThreePoints:CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2)
+                                                        p2:CGPointMake(center.x + radius, center.y - 10)];
+        float newAngle = [self angleBetweenThreePoints:CGPointMake(center.x, center.y - 10)
                                                     p1:CGPointMake(x, y)
-                                                    p2:CGPointMake(self.frame.size.width, self.frame.size.height / 2)];
+                                                    p2:CGPointMake(center.x + radius, center.y - 10)];
         
         CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
         
         CGMutablePathRef path = CGPathCreateMutable();
-        CGPathAddArc(path,nil, self.frame.size.width / 2, self.frame.size.height / 2, self.frame.size.width / 2, currentAngle, newAngle, change < 0);
+        CGPathAddArc(path, nil, center.x, center.y - 10, radius, currentAngle, newAngle, change < 0);
         animation.path=path;
         CGPathRelease(path);
         
@@ -207,9 +216,9 @@
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextSaveGState(ctx);
 
-    CGContextTranslateCTM(ctx, self.bounds.size.width / 2, self.bounds.size.height / 2);
+    CGContextTranslateCTM(ctx, center.x, center.y);
 //    CGContextRotateCTM(ctx, M_PI_4);
-    CGContextDrawImage(ctx, CGRectAdd(self.bounds, -self.bounds.size.width / 2, - self.bounds.size.height / 2, 0, 0), gradient);
+    CGContextDrawImage(ctx, CGRectAdd(self.bounds, -self.bounds.size.width / 2, - self.bounds.size.height / 2 - 10, 0, 0), gradient);
 //    CGContextDrawImage(ctx, self.bounds, [self borderMask]);
     
     CGContextRestoreGState(ctx);
@@ -227,7 +236,7 @@
     
     CGContextSetStrokeColorWithColor(ctx, [UIColor blackColor].CGColor);
     CGContextSetLineWidth(ctx, SLIDER_WIDTH);
-    CGContextAddEllipseInRect(ctx, CGRectAdd(self.bounds, SLIDER_WIDTH / 2, SLIDER_WIDTH / 2, - SLIDER_WIDTH, -SLIDER_WIDTH));
+    CGContextAddEllipseInRect(ctx, CGRectMake(offset, offset, 2 * radius, 2 * radius));
     CGContextStrokePath(ctx);
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
