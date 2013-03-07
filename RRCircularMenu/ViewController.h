@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RRCircularMenu.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <RRCircularMenuDelegate>
 
 @end
