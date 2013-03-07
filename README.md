@@ -10,31 +10,24 @@ ARC is not enabled for this component, be sure to replace all retains with stron
 
 See demo app for example. It's pretty simple:
 ```
-        menu = [[RRCircularMenu alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 180, self.view.frame.size.width, 180)];
-        menu.delegate = self;
+menu = [[RRCircularMenu alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 180, self.view.frame.size.width, 180)];
+menu.delegate = self;
         
-        [self.view addSubview:menu];
-        [menu showWithAnimationBlock:^{
-            self.view.backgroundColor = [UIColor darkGrayColor];
-        } settingSliderTo:3];
+[self.view addSubview:menu];
+[menu showWithAnimationBlock:^{
+    self.view.backgroundColor = [UIColor darkGrayColor];
+} settingSliderTo:3];
 ```
 `showWithAnimationBlock` is a set of animations. Supplied animation block helps if you show menu in a modal way, so you can prepare view hierarchy for displaying menu.
 
 Delegate used for all kinds of events:
 ```
-- (void) setItem:(int)index active:(BOOL)active;
-- (BOOL) isItemActive:(int)index;
+- (void) menuItem:(RRCircularItem *)item didChangeActive:(BOOL)active;
+- (void) menuLabel:(RRCircularMenuLabel *)label didChangeActive:(BOOL)active;
 
-- (void) setLabelActive:(BOOL)active;
-- (BOOL) isLabelActive;
-- (void) setLabelText:(NSString *)text;
+- (BOOL) ignoreClickFor:(RRCircularItem *)item;
 
-- (void) setSliderValue:(int)value;
-- (void) setSliderValue:(int)value animated:(BOOL)animated;
-- (int) sliderValue;
-
-- (void) showWithAnimationBlock:(void(^)(void))block settingSliderTo:(int)value;
-- (void) hideWithAnimationBlock:(void(^)(void))block;
+- (void) sliderValueChanged:(RRCircularSlider *)slider;
 ```
 
 ## Credits
