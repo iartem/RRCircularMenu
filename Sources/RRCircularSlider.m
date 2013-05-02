@@ -163,6 +163,10 @@
 }
 
 - (void) setValue:(int)value animated:(BOOL)animated {
+    [self setValue:value animated:animated notifying:YES];
+}
+
+- (void) setValue:(int)value animated:(BOOL)animated notifying:(BOOL)notifying {
     if (_value == value && animated) return;
     
     int change = value - _value;
@@ -199,7 +203,7 @@
     } else {
         thumb.frame = CGRectMake(x - 20, y - 20, 40, 40);
     }
-    [self sendActionsForControlEvents:UIControlEventValueChanged];
+    if (notifying) [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
 
 - (void)animationDidStop:(CAAnimation *)theAnimation finished:(BOOL)flag {

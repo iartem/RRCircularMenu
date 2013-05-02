@@ -19,7 +19,9 @@
 
 // Number of steps from angleFrom  
 @property (nonatomic) int value;
-- (void) setValue:(int)value animated:(BOOL)animated;
+
+- (void) setValue:(int)value animated:(BOOL)animated; // notifying = YES
+- (void) setValue:(int)value animated:(BOOL)animated notifying:(BOOL)notifying; // notify listeners about value changes
 
 - (UIView *) thumb;
 @end

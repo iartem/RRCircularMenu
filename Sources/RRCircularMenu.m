@@ -78,7 +78,7 @@
     slider.angleFrom = angleFromDegrees;
     slider.angleTo = angleToDegrees;
     slider.step = angleStep;
-    [slider setValue:0 animated:NO];
+    [slider setValue:0 animated:NO notifying:NO];
     [slider addTarget:self action:@selector(sliderValueChanged) forControlEvents:UIControlEventValueChanged];
     [self addSubview:slider];
 }
@@ -215,7 +215,7 @@
     // 3. Scale up rainbow
     [slider removeFromSuperview];
     [self insertSubview:slider belowSubview:[items objectAtIndex:0]];
-    [slider setValue:-1 animated:NO];
+    [slider setValue:-1 animated:NO notifying:NO];
     
     slider.alpha = 0;
     slider.transform = CGAffineTransformMakeScale(0.8, 0.8);
@@ -232,7 +232,7 @@
                              slider.transform = CGAffineTransformIdentity;
                          } completion:^(BOOL finished) {
                              // 4. Rotate slider thumb to its position
-                             [slider setValue:value animated:YES];
+                             [slider setValue:value animated:YES notifying:NO];
                          }];
                      }];
 }
@@ -244,7 +244,7 @@
     float duration2 = 0.4;
     
     // 1. Scale down whole slider
-    [slider setValue:-1 animated:YES];
+    [slider setValue:-1 animated:YES notifying:NO];
     [UIView animateWithDuration:duration1 / 2
                           delay:0
                         options:UIViewAnimationOptionCurveEaseOut
