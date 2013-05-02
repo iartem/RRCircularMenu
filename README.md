@@ -1,7 +1,7 @@
 RRCircularMenu
 ==============
 
-Menu + slider, all circular, animated and 100% Core Graphics (except for icons). As seen in [Run app](http://getrunapp.com).
+Menu + slider + rainbow, all circular, animated and 100% Core Graphics (except for icons). As seen in [Run app](http://getrunapp.com).
 
 ![RRCircularMenu screenshot](https://raw.github.com/iartem/RRCircularMenu/master/screenshot.png)
 
