@@ -3,6 +3,8 @@ RRCircularMenu
 
 Menu + slider, all circular, animated and 100% Core Graphics (except for icons). As seen in [Run app](http://getrunapp.com).
 
+![RRCircularMenu screenshot](https://raw.github.com/iartem/RRCircularMenu/master/screenshot.png)
+
 This component is NOT really configurable, because it's kind of difficult to configure such menus. But you still can set colors, borders, change number of menu items and stuff like that. If you need whole circle of menu items, you'll have to dig into source code and change animations. 
 
 ## Introduction
