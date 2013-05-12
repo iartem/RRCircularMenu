@@ -12,7 +12,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class RRCircularItem, RRCircularMenuLabel, RRCircularSlider;
+#import "RRCircularItem.h"
+#import "RRCircularMenu.h"
+#import "RRCircularMenuLabel.h"
+#import "RRCircularSlider.h"
 
 @protocol RRCircularMenuDelegate <NSObject>
 @optional
