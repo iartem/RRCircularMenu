@@ -1,9 +1,13 @@
 RRCircularMenu
 ==============
 
-RRCircularMenu is a circular menu with a rainbow border and a slider. All animations and drawing are 100% Core Graphics (except for icons). As seen in [Run for iPhone](http://getrunapp.com).
+RRCircularMenu is a Menu, slider and rainbow! All circular, animated and 100% Core Graphics (except for icons). As seen in [Run for iPhone](http://getrunapp.com).
 
-![RRCircularMenu screenshot](https://raw.github.com/iartem/RRCircularMenu/master/screenshot.png)
+Here is short demo video:
+
+[![RRCircularMenu demo](http://img.youtube.com/vi/lrPxjKIlQrg/0.jpg)](http://www.youtube.com/watch?v=lrPxjKIlQrg)
+
+
 
 Requirements
 ---
